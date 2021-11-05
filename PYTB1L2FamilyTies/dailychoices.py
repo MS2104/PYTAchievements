@@ -32,6 +32,21 @@ def firstchoicefunction():
 
 def secondchoicefunction():
     while True:
+        print("You walk into the bathroom and brush your teeth. Your hair looks like a mess. WALDo you put gel in your hair to style it or brush it?")
+
+        secondchoice = input("gel/brush: ")
+
+        if secondchoice == 'gel':
+            print("You put in gel to make your hair look nice.")
+            break
+        elif secondchoice == 'brush':
+            print("You brushed your hair so it looks alot less messier.")
+            break
+        else:
+            print("That isn't a valid choice.")
+
+def thirdchoicefunction():
+    while True:
         print("It's time to get dressed, these are your options:")
 
         print(clothing1)
@@ -56,7 +71,7 @@ def secondchoicefunction():
         else:
             print("You don't have that in your wardrobe!")
 
-def thirdchoicefunction():
+def fourthchoicefunction():
     while True:
         print("You head down stairs and into the kitchen to go make breakfast")
         print("You can pick between the following: ")
@@ -76,10 +91,27 @@ def thirdchoicefunction():
         else:
             print("You couldn't find", thirdchoice, 'in your kitchen.')
 
-def fourthchoice():
-    print("You're running late for work")
+def fifthchoicefunction():
+    while True:
+        print("You're running late for work")
+        print("You put on your shoes and head out to your car to get to work. Once you arrive at your car, you realize you forgot your keys.")
+        print("Do you, A. Go back home to get your keys or B. go with the bus?")
+
+        fourthchoice = input(">>> ")
+
+        if fourthchoice == 'A' or 'a':
+            print("You went back home to get your keys and came back to your car.")
+            break
+        elif fourthchoice == 'B' or 'b':
+            break
+        else:
+            print("That's not a valid option!")
 
 while running:
     firstchoicefunction()
     secondchoicefunction()
     thirdchoicefunction()
+    fourthchoicefunction()
+    fifthchoicefunction()
+    print("DailyChoices.py by Milad Sahar")
+    running = False

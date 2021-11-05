@@ -1,3 +1,4 @@
+import time
 naam = 'Milad'
 leeftijd = 16
 woonplaats = 'amsterdam'
@@ -10,3 +11,5 @@ print('Mijn naam is ', naam, ', ik ben ', leeftijd, ' jaar oud en woon in ', woo
 print(' en ', zus, ' zusje die 13 is. Ik woon thuis met beide mijn ouders.')
 print('Ik woon ', afstand, ' kilometeres van school.')
 print('Mijn hobbies zijn: ', hobbies)
+
+time.sleep(60)
